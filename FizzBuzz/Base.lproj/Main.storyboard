@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GameViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="GameViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-sN-NyI">
+                                <rect key="frame" x="50" y="220" width="129" height="129"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="18u-FS-fiY"/>
+                                    <constraint firstAttribute="height" constant="129" id="n0I-hp-G31"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.062827450450000003" green="0.63874128659999996" blue="0.64928756480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tph-sv-CIc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-pJ-XFj">
+                                <rect key="frame" x="50" y="365" width="129" height="129"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Fjw-Wy-U3e"/>
+                                    <constraint firstAttribute="height" constant="129" id="Ili-v5-6KC"/>
+                                </constraints>
+                                <state key="normal" title="FB" image="ring.png">
+                                    <color key="titleColor" red="0.062827450450000003" green="0.63874128659999996" blue="0.64928756480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fizzBuzzButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMC-rr-fDW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNU-gc-7fr">
+                                <rect key="frame" x="196" y="220" width="129" height="129"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="9Lt-xX-QAk"/>
+                                    <constraint firstAttribute="height" constant="129" id="BkX-pW-gR8"/>
+                                </constraints>
+                                <state key="normal" image="rocket.png">
+                                    <color key="titleColor" red="0.062745098040000002" green="0.63921568630000003" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fizzButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHn-Tc-bw8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-be-ced">
+                                <rect key="frame" x="261" y="50" width="74" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27l-al-8Ks">
+                                <rect key="frame" x="196" y="365" width="129" height="129"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="0yO-Vs-vlp"/>
+                                    <constraint firstAttribute="width" constant="129" id="nWe-RR-1ky"/>
+                                </constraints>
+                                <state key="normal" title="Buzz" image="bee.png">
+                                    <color key="titleColor" red="0.062827450450000003" green="0.63874128659999996" blue="0.64928756480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buzzButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzT-df-vhN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K0-Cd-J85">
+                                <rect key="frame" x="203" y="579" width="132" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Play again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qb-fh-9Bk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gA-Yv-PFh">
+                                <rect key="frame" x="183" y="116" width="152" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062827450452615188" green="0.63874128664399699" blue="0.64928756476683935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0gA-Yv-PFh" firstAttribute="top" secondItem="1IR-be-ced" secondAttribute="bottom" constant="8" id="4Wo-Y3-wfv"/>
+                            <constraint firstItem="0gA-Yv-PFh" firstAttribute="trailing" secondItem="1IR-be-ced" secondAttribute="trailing" id="GpY-co-FVj"/>
+                            <constraint firstItem="nNU-gc-7fr" firstAttribute="top" secondItem="vDf-sN-NyI" secondAttribute="top" id="HRg-I3-eFJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27l-al-8Ks" secondAttribute="trailing" constant="50" id="LZ0-FG-ZL3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8K0-Cd-J85" secondAttribute="trailing" constant="40" id="PYz-iu-Tco"/>
+                            <constraint firstItem="vDf-sN-NyI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="PhT-d9-GW4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8K0-Cd-J85" secondAttribute="bottom" constant="40" id="Vb9-4Z-ZZw"/>
+                            <constraint firstItem="1IR-be-ced" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="aNH-Md-Dox"/>
+                            <constraint firstItem="hpB-pJ-XFj" firstAttribute="top" secondItem="vDf-sN-NyI" secondAttribute="bottom" constant="16" id="eIS-X8-Zua"/>
+                            <constraint firstItem="vDf-sN-NyI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="g3r-Jk-tL7"/>
+                            <constraint firstItem="hpB-pJ-XFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hWA-vV-3nf"/>
+                            <constraint firstItem="27l-al-8Ks" firstAttribute="top" secondItem="hpB-pJ-XFj" secondAttribute="top" id="lCM-nK-6L6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1IR-be-ced" secondAttribute="trailing" constant="40" id="p6Y-RY-Z3j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nNU-gc-7fr" secondAttribute="trailing" constant="50" id="sse-1q-Jmd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FizzBuzzLabel" destination="1IR-be-ced" id="8aB-Pm-ajU"/>
+                        <outlet property="buzzButton" destination="27l-al-8Ks" id="32A-mC-W6P"/>
+                        <outlet property="fizzButton" destination="nNU-gc-7fr" id="jzX-96-qkB"/>
+                        <outlet property="fizzBuzzButton" destination="hpB-pJ-XFj" id="aaJ-KW-YcT"/>
+                        <outlet property="fizzBuzzLabel" destination="1IR-be-ced" id="qtj-yP-cnK"/>
+                        <outlet property="numberButton" destination="vDf-sN-NyI" id="f1d-th-4sU"/>
+                        <outlet property="playAgainButton" destination="8K0-Cd-J85" id="Cdv-pC-hd7"/>
+                        <outlet property="scoreLabel" destination="0gA-Yv-PFh" id="SYV-dR-irk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bee.png" width="512" height="512"/>
+        <image name="ring.png" width="512" height="512"/>
+        <image name="rocket.png" width="512" height="512"/>
+    </resources>
+</document>
